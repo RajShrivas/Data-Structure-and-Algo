@@ -14,6 +14,7 @@ public class IntroArray {
 
         int[] num = {5, 77, 23, 55, 99, 443};
 
+        //print with array method
         System.out.println(Arrays.toString(arr));
 
 
