@@ -1,7 +1,7 @@
 package com.stark.array.intro;
 
 import java.util.Arrays;
-
+//Programme for reversing an array
 public class ReverseArray {
 
     public static void main(String[] args) {
