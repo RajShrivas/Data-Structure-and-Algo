@@ -1,4 +1,4 @@
-package com.startk.array.intro;
+package com.stark.array.intro;
 
 import java.util.Arrays;
 

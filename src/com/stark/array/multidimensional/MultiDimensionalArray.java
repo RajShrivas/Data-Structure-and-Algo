@@ -1,4 +1,4 @@
-package com.startk.array.multidimensional;
+package com.stark.array.multidimensional;
 
 public class MultiDimensionalArray {
 
