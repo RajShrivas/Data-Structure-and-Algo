@@ -4,9 +4,9 @@ public class MaxArray {
 
     public static void main(String[] args) {
 
-        int[] arr = {5, 7, 2, 9, 15, 84, 79};
+        int[] arr = {5, 7, 2, 19, 15, 84, 79};
         System.out.println(max(arr));
-        System.out.println(maxInRange(arr, 1, 3));
+        System.out.println(maxInRange(arr, 1, 4));
     }
 
 
@@ -32,14 +32,8 @@ public class MaxArray {
         if (arr.length == 0) {
             return -1;
         }
-
-        if (end > start) {
-            return -1;
-        }
-
         int maxValue = arr[start];
-        for (int i = 0; i <= end; i++) {
-
+        for (int i = start; i <= end; i++) {
             if (arr[i] > maxValue) {
                 maxValue = arr[i];
             }

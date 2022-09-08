@@ -8,7 +8,7 @@ public class SearchIn2D {
 
         int[][] arr = {{33, 5, 67}, {31, 53, 4}, {22, 50, 99},};
 
-        int[] result = search(arr, 53);
+        int[] result = search(arr, 4);
         System.out.println(Arrays.toString(result));
 
         int max = maxIn2D(arr);
@@ -19,13 +19,13 @@ public class SearchIn2D {
         if (arr.length == 0) {
             return new int[]{-1, -1};
         }
+
         for (int row = 0; row < arr.length; row++) {
             for (int col = 0; col < arr[row].length; col++) {
                 int val = arr[row][col];
                 if (val == target) {
-                    return new int[]{row + 1, col + 1};
+                    return new int[]{row, col};
                 }
-
             }
         }
         return new int[]{-1, -1};
