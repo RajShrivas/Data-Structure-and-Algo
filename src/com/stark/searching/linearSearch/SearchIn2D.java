@@ -1,4 +1,4 @@
-package com.stark.linearSearch;
+package com.stark.searching.linearSearch;
 
 import java.util.Arrays;
 
@@ -6,13 +6,15 @@ public class SearchIn2D {
 
     public static void main(String[] args) {
 
-        int[][] arr = {{33, 5, 67}, {31, 53, 4}, {22, 50, 99},};
+        int[][] arr = {{33, 5, 67}, {31, 53, 100}, {22, 50, 99},};
+        int target = 4;
 
-        int[] result = search(arr, 4);
+        int[] result = search(arr, target);
         System.out.println(Arrays.toString(result));
 
         int max = maxIn2D(arr);
         System.out.println(max);
+
     }
 
     private static int[] search(int[][] arr, int target) {
@@ -45,4 +47,5 @@ public class SearchIn2D {
         }
         return maxVal;
     }
+
 }

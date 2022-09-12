@@ -7,9 +7,7 @@ public class ReverseArray {
     public static void main(String[] args) {
 
         int[] arr = {33, 4, 89, 2, 1, 22};
-
         reverse(arr);
-
         System.out.println(Arrays.toString(arr));
 
     }

@@ -1,4 +1,4 @@
-package com.stark.linearSearch;
+package com.stark.searching.linearSearch;
 
 public class EvenDigit {
 

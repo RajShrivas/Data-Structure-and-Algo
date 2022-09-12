@@ -1,4 +1,4 @@
-package com.stark.linearSearch;
+package com.stark.searching.linearSearch;
 
 /*Linear Search is defined as a sequential search algorithm that starts at one end and goes through
  each element of a list until the desired element is found,otherwise the search continues till
@@ -10,9 +10,13 @@ public class NumericalSearch {
 
         int[] arr = {66, 23, 45, 9, 12, 5};
 
-        int result = linearSearch(arr, 23);
-        int result2 = linearSearchWithForEach(arr, 23);
-        boolean result3 = linearSearchInRangeForEach(arr, 23, 4, 6);
+        int target = 23;
+        int result = linearSearch(arr, target);
+        int result2 = linearSearchWithForEach(arr, target);
+
+        int start = 4;
+        int end = 6;
+        boolean result3 = linearSearchInRangeForEach(arr, target, start, end);
         int result4 = findMin(arr);
         System.out.println(result);
         System.out.println(result2);
@@ -70,7 +74,7 @@ public class NumericalSearch {
         return false;
     }
 
-//find minimum value from an array
+    //find minimum value from an array
     private static int findMin(int[] arr) {
         if (arr.length == 0) {
             return -1;

@@ -1,4 +1,4 @@
-package com.stark.linearSearch;
+package com.stark.searching.linearSearch;
 
 public class StringSearch {
 
@@ -16,7 +16,6 @@ public class StringSearch {
         if (str.length() == 0) {
             return false;
         }
-
         for (int index = 0; index < str.length(); index++) {
             char c = str.charAt(index);
             if (c == target) {
@@ -32,7 +31,6 @@ public class StringSearch {
         if (str.length() == 0) {
             return false;
         }
-
         for (char c : str.toCharArray()) {
             if (c == target) {
                 return true;

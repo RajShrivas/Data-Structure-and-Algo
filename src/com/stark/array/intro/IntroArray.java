@@ -18,7 +18,7 @@ public class IntroArray {
         System.out.println(Arrays.toString(arr));
 
 
-        // print with enchanced for each loop
+        // print with enhanced for each loop
         for (int n : num) {
             System.out.println(n);
         }
