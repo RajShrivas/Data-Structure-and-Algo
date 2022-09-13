@@ -9,6 +9,7 @@ public class FloorBinarySearch {
         System.out.println(result);
     }
 
+    //Floor is the greatest element smaller than or equal to target
     private static int floorSearch(int[] array, int target) {
 
         int start = 0;
