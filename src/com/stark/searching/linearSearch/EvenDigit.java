@@ -7,7 +7,6 @@ public class EvenDigit {
         int[] arr = {45, 77, 112, 355, 1, 889};
         int res = findNumber(arr);
         System.out.println(res);
-
     }
 
     private static int findNumber(int[] num) {

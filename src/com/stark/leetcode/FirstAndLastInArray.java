@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class FirstAndLastInArray {
 
     public static void main(String[] args) {
-
         int[] arr = {2, 4, 7, 8, 8, 8, 8, 8, 9, 11};
         int target = 8;
         int[] result = search(arr, target);

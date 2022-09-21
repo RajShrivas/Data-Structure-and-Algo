@@ -6,7 +6,7 @@ public class SearchIn2D {
 
     public static void main(String[] args) {
 
-        int[][] arr = {{33, 5, 67}, {31, 53, 100}, {22, 50, 99},};
+        int[][] arr = {{33, 5, 67}, {31, 53, 100}, {22, 50, 99}};
         int target = 4;
 
         int[] result = search(arr, target);

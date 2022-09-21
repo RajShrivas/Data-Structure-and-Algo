@@ -4,7 +4,7 @@ public class FloorBinarySearch {
 
     public static void main(String[] args) {
         int[] arr = {-4, -1, 4, 6, 8, 9, 22, 35, 63};
-        int target = 64;
+        int target = 7;
         int result = floorSearch(arr, target);
         System.out.println(result);
     }
@@ -27,4 +27,21 @@ public class FloorBinarySearch {
         }
         return end;
     }
+
+
+    //simple approach
+    static int solve(int[] array, int target) {
+        int value = 0;
+        for (int j : array) {
+            if (target > j) {
+                value = j;
+            } else if (target == j) {
+                return j;
+            } else {
+                return -1;
+            }
+        }
+        return value;
+    }
+
 }

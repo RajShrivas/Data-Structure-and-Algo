@@ -22,7 +22,7 @@ public class BinaryIntro {
             if (target < arr[mid]) {
                 end = mid - 1;
             } else if (target > arr[mid]) {
-                //if target value is less than array mid-value that take the array of the right side
+                //if target value is greater than array mid-value that take the array of the right side
                 start = mid + 1;
             } else {
                 //or else return the mid-one itself
@@ -32,3 +32,4 @@ public class BinaryIntro {
         return -1;
     }
 }
+

@@ -55,9 +55,7 @@ public class FirstAndLastInArray {
         return ans;
     }
 
-
     //**************************************************************************************************
-
 
     //bruteforce way to solve this problem(easy)
     private static int searchingFirst(int[] arr, int target) {

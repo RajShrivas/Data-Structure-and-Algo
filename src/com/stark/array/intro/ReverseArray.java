@@ -11,10 +11,7 @@ public class ReverseArray {
         System.out.println(Arrays.toString(arr));
 
     }
-
-
     private static void reverse(int[] arr) {
-
         int start = 0;
         int end = arr.length - 1;
 
