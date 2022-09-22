@@ -6,11 +6,11 @@ public class Test {
 
     public static void main(String[] args) {
         int[] arr = {2, 1, 3};
-        insertionSort(arr);
+        selectionSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 
-    private static void insertionSort(int[] arr) {
+    private static void selectionSort(int[] arr) {
         if (arr.length == 0) {
             System.out.println("Empty array");
         }
