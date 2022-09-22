@@ -1,4 +1,4 @@
-package com.stark.sorting.insertionSort;
+package com.stark.sorting.selectionSort;
 
 import java.util.Arrays;
 
@@ -6,11 +6,11 @@ public class Intro {
 
     public static void main(String[] args) {
         int[] arr = {3, 1, 12, 11, 13};
-        insertionSort(arr);
+        selectionSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 
-    private static void insertionSort(int[] arr) {
+    private static void selectionSort(int[] arr) {
         if (arr.length == 0) {
             System.out.println("Empty array");
         }
