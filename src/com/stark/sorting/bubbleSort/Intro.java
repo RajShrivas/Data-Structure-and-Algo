@@ -1,4 +1,4 @@
-package com.stark.bubbleSort;
+package com.stark.sorting.bubbleSort;
 
 import java.util.Arrays;
 
@@ -6,7 +6,6 @@ import java.util.Arrays;
 elements if they are in the wrong order. This algorithm is not suitable for large data
 sets as its average and worst-case time complexity is quite high.*/
 public class Intro {
-
     public static void main(String[] args) {
         //Numerical bubble sort
         int[] arr = {5, 4, 3, 2, 1};
@@ -14,7 +13,7 @@ public class Intro {
         System.out.println(Arrays.toString(arr));
 
         //String bubble sort
-        String[] strArray = {"Z", "Q", "C", "B", "A"};
+        String[] strArray = {"Thor", "Ironman", "Captain America", "Black widow", "Hawkeye"};
         bubbleSortOnString(strArray);
         System.out.println(Arrays.toString(strArray));
 
@@ -36,7 +35,6 @@ public class Intro {
             //sorting/cases
             for (int j = 1; j < n; j++) {
                 if (arr[j] < arr[j - 1]) {
-
                     int temp = arr[j];
                     arr[j] = arr[j - 1];
                     arr[j - 1] = temp;
