@@ -2,7 +2,7 @@ package com.stark.test;
 
 import java.util.Arrays;
 
-public class Test {
+public class Test1_SelectionSort {
 
     public static void main(String[] args) {
         int[] arr = {2, 1, 3};
