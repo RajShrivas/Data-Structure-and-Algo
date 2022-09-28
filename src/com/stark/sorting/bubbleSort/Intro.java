@@ -8,7 +8,7 @@ sets as its average and worst-case time complexity is quite high.*/
 public class Intro {
     public static void main(String[] args) {
         //Numerical bubble sort
-        int[] arr = {5, 4, 3, 2, 1};
+        int[] arr = {3, 2, 4, 1};
         bubbleSort(arr);
         System.out.println(Arrays.toString(arr));
 
@@ -26,7 +26,7 @@ public class Intro {
             System.out.println("Empty array");
         }
         boolean swapped;
-        //her we use i just for the number of iterations
+        //here we use i just for the number of iterations
         for (int i = 0; i < arr.length; i++) {
             swapped = false;
             int n = arr.length - i;
