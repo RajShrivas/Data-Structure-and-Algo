@@ -6,9 +6,11 @@ public class Intro {
 
     public static void main(String[] args) {
         int[] arr = {3, 1, 4, 2, 5, 7, 6, 8};
-        cyclicSort(arr);
+        cyclicSort2(arr);
         System.out.println(Arrays.toString(arr));
     }
+
+    //with while loop
     private static void cyclicSort(int[] arr) {
         int i = 0;
         while (i < arr.length) {
@@ -17,6 +19,16 @@ public class Intro {
                 swap(arr, i, correct);
             } else {
                 i++;
+            }
+        }
+    }
+
+    //with for-loop
+    private static void cyclicSort2(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            int correct_index = arr[i] - 1;
+            if (arr[i] != arr[correct_index]) {
+                swap(arr, i, correct_index);
             }
         }
     }
