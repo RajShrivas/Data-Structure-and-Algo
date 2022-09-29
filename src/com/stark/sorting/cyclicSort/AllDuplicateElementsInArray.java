@@ -12,7 +12,7 @@ public class AllDuplicateElementsInArray {
     }
 
     private static List<Integer> allDuplicates(int[] nums) {
-        List<Integer> result = new ArrayList<Integer>();
+        List<Integer> result = new ArrayList<>();
         if (nums.length == 0) {
             result.add(-1);
         }
