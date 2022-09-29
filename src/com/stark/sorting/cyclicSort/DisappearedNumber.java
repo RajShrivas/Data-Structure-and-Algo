@@ -1,17 +1,18 @@
 package com.stark.sorting.cyclicSort;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Intro {
+public class DisappearedNumber {
 
     public static void main(String[] args) {
-        int[] arr = {1, 4, 3, 2, 5, 7, 6, 8};
-        cyclicSort(arr);
-        System.out.println(Arrays.toString(arr));
+        int[] num = {4, 3, 2, 7, 8, 2, 3, 1};
+        List<Integer> result = missing(num);
+        System.out.println(result);
     }
 
-    //with while loop
-    private static void cyclicSort(int[] arr) {
+    private static List<Integer> missing(int[] arr) {
+        List<Integer> list = new ArrayList<>();
         int i = 0;
         while (i < arr.length) {
             int correct = arr[i] - 1;
@@ -21,16 +22,13 @@ public class Intro {
                 i++;
             }
         }
-    }
 
-    //with for-loop
-    private static void cyclicSort2(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            int correct_index = arr[i] - 1;
-            if (arr[i] != arr[correct_index]) {
-                swap(arr, i, correct_index);
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j] != j + 1) {
+                list.add(j + 1);
             }
         }
+        return list;
     }
 
     private static void swap(int[] arr, int first, int second) {
