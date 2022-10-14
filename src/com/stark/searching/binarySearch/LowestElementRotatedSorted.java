@@ -33,7 +33,7 @@ public class LowestElementRotatedSorted {
             if (arr[mid] < arr[mid - 1]) {
                 return mid;
             }
-            if (arr[mid] > arr[start]) {
+            if (arr[mid] >= arr[start]) {
                 start = mid + 1;
             } else {
                 end = mid - 1;
