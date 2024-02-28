@@ -1,4 +1,4 @@
-package com.stark.recursion;
+package com.stark.recursion.intro;
 
 public class BinarySearchRecursion {
 

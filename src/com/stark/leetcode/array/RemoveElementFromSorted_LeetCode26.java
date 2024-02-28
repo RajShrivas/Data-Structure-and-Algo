@@ -1,7 +1,5 @@
 package com.stark.leetcode.array;
 
-import java.util.Arrays;
-
 public class RemoveElementFromSorted_LeetCode26 {
 
     public static void main(String[] args) {
@@ -18,9 +16,6 @@ public class RemoveElementFromSorted_LeetCode26 {
                 arr[j] = arr[i];
             }
         }
-
-        System.out.println(Arrays.toString(arr));
-
         return j + 1;
     }
 
