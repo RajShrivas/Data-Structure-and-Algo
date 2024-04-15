@@ -12,7 +12,7 @@ public class ZeroCounts {
         return zeros(n, 0);
     }
 
-    //Special pattern, how to pass a value to above call
+    //Special pattern, how to pass a value to the above call
     private static int zeros(int n, int c) {
         if (n == 0) {
             return c;

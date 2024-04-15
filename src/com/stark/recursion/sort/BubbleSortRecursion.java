@@ -11,17 +11,17 @@ public class BubbleSortRecursion {
         System.out.println(Arrays.toString(arr));
     }
 
-    private static void sort(int[] arr, int r, int c) {
-        if (r == 0) {
+    private static void sort(int[] arr, int i, int j) {
+        if (i == 0) {
             return;
         }
-        if (r > c) {
-            if (arr[c] > arr[c + 1]) {
-                swap(arr, c, c + 1);
+        if (i > j) {
+            if (arr[j] > arr[j + 1]) {
+                swap(arr, j, j + 1);
             }
-            sort(arr, r, c + 1);
+            sort(arr, i, j + 1);
         } else {
-            sort(arr, r - 1, 0);
+            sort(arr, i - 1, 0);
         }
     }
 
