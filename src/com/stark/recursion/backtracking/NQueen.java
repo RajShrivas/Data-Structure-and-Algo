@@ -40,16 +40,16 @@ public class NQueen {
         }
 
         //diagonal left
-        int maxLeft = Math.min(row, col);
-        for (int i = 1; i <= maxLeft; i++) {
+        int minLeft = Math.min(row, col);
+        for (int i = 1; i <= minLeft; i++) {
             if (board[row - i][col - i]) {
                 return false;
             }
         }
 
         //diagonal right
-        int maxRight = Math.min(row, board.length - col - 1);
-        for (int i = 1; i <= maxRight; i++) {
+        int minRight = Math.min(row, board.length - col - 1);
+        for (int i = 1; i <= minRight; i++) {
             if (board[row - i][col + i]) {
                 return false;
             }
