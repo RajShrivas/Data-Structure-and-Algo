@@ -4,7 +4,7 @@ public class LengthOfString {
 
     public static void main(String[] args) {
 
-        int i = calLength("Pooja Raj", 0);
+        int i = calLength("Raj", 0);
         System.out.println(i);
     }
 

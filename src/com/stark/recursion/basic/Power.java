@@ -3,7 +3,7 @@ package com.stark.recursion.basic;
 public class Power {
 
     public static void main(String[] args) {
-       // power(2, 2);
+        System.out.println(power(2, 4));
     }
 
     private static int power(int n, int p) {

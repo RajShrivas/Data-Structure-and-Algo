@@ -1,5 +1,5 @@
 package com.stark.recursion.basic;
-
+//Ex-> n=345   ans= 12 (3+4+5)
 public class SumOfDigit {
 
 
