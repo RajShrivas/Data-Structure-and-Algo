@@ -9,7 +9,7 @@ public class Main {
         assert android != null;
         System.out.println(android.salary());
 
-        Employee web = EmployeeFactory.getEmployee("web");
+        Employee web = EmployeeFactory.getEmployee(WebDev.class);
         assert web != null;
         System.out.println(web.salary());
 
